@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registrarse</title>
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  .bg {
+    background-image: url('https://verv.com/wp-content/uploads/2019/03/happy_workout-e1553776549728.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed; 
+    width: 100%;
+    height: 100%;
+    -webkit-filter: blur(10px);
+    filter: blur(0px);
+  }
+  .register-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: auto;
+    padding: 40px;
+    width: 420px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  input[type=text], input[type=email], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+  .password-toggle {
+    position: relative;
+  }
+  .password-toggle input[type=password] {
+    padding-right: 30px;
+  }
+  .password-toggle .eye-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+  }
+  button:hover {
+    opacity: 0.8;
+  }
+  .logo {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    width: 150px;
+    height: 150px;
+  }
+  
+</style>
+</head>
+<body>
+
+<div class="bg"></div>
+
+<div class="register-container">
+  <form id="registerForm">
+    <h2>ㅤ ㅤ ㅤ ㅤ ㅤCrear Cuenta</h2>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+    
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" name="apellido" required>
+
+    <label for="rut">RUT:</label>
+    <input type="text" id="rut" name="rut" required>
+
+    <label for="teléfono">Número de teléfono:</label>
+    <input type="text" id="teléfono" name="teléfono" required>
+    
+    <label for="email">Correo Electrónico:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="password" class="password-toggle"> Contraseña:</label>
+    <input type="password" id="password" name="password" required>
+      
+    <button type="submit">Crear cuenta</button>
+  </form>
+</div>
+
+<img class="logo" src="gym.jpg" alt="Logo">
+
+<script>
+document.getElementById('registerForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+  
+  var nombre = document.getElementById('nombre').value;
+  var apellido = document.getElementById('apellido').value;
+  var rut = document.getElementById('rut').value;
+  var telefono = document.getElementById('teléfono').value;
+  var email = document.getElementById('email').value;
+  var password = document.getElementById('password').value;
+  
+  var camposValidos = true;
+  var mensajesError = [];
+  
+  var regexNombreApellido = /^[a-zA-Z\s]*$/;
+  if(!regexNombreApellido.test(nombre)) {
+    mensajesError.push('El nombre no debe contener números.');
+    camposValidos = false;
+  }
+  
+  if(!regexNombreApellido.test(apellido)) {
+    mensajesError.push('El apellido no debe contener números.');
+    camposValidos = false;
+  }
+  
+  var regexRut = /^\d{9}$/;
+  if(!regexRut.test(rut)) {
+    mensajesError.push('El RUT debe contener exactamente 9 dígitos.');
+    camposValidos = false;
+  }
+  
+  var regexTelefono = /^\+569\d{8}$/;
+  if(!regexTelefono.test(telefono)) {
+    mensajesError.push('El número de teléfono debe seguir el formato +569XXXXXXXX.');
+    camposValidos = false;
+  }
+  
+  if(email.trim() === '') {
+    mensajesError.push('El campo "Correo Electrónico" es obligatorio.');
+    camposValidos = false;
+  } else if(!email.includes('@')) {
+    mensajesError.push('Por favor, introduce una dirección de correo electrónico válida.');
+    camposValidos = false;
+  }
+  
+  if(password.trim() === '') {
+    mensajesError.push('El campo "Contraseña" es obligatorio.');
+    camposValidos = false;
+  }
+  
+  if(!camposValidos) {
+    alert('Por favor, corrige los siguientes errores:\n' + mensajesError.join('\n'));
+  } else {
+    console.log('Formulario enviado:', nombre, apellido, rut, telefono, email, password);
+  }
+});
+
+
+</script>
+
+</body>
+</html>
