@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gimnasio</title>
+    <img src="imagenes\logo.png" alt="Descripción de la imagen" id="miImagen" class="logo">
+    <link rel="stylesheet" href="Estilos2.css">
+</head>
+<body>
+    <h1 class="titulo">GYM ARICA</h1>
+
+    <div class="rectangleSaludo"> 
+        <h3 style="color: #ffffff;" id="bienvenido">Bienvenido, Nombre </h3>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <figure>
+                <br><img src="imagenes\calcul.png" id="calculadora">
+            </figure>
+            <div class="contenido">
+                <h3 style="color: #ffffff;"> Calculadora </h3>
+                <p>  Ayuda a determinar sus necesidades diarias de macronutrientes en su dieta.</p>
+                <a href="#"> Ver Más</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <figure>
+                <img src="imagenes\maquina.png">
+            </figure>
+            <div class="contenido">
+                <h3 style="color: #ffffff;"> Maquinas </h3>
+                <p> Aquí te proporcionamos información sobre las maquinas disponibles en el establecimiento. </p>
+                <a href="#"> Ver Más </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <figure>
+                <img src="imagenes\rutina.png">
+            </figure>
+            <div class="contenido">
+                <h3 style="color: #ffffff;" id="rutinas">Rutinas </h3>
+                <p> En esta sección te asignamos una rutina de entrenamiento según tus preferencias. </p>
+                <a href="#"> Ver Más </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <figure>
+                <img src="imagenes\video.png">
+            </figure>
+            <div class="contenido">
+                <h3 style="color: #ffffff;">Video Demostración </h3>
+                <p> Se presenta visualmente la ténica adecuada de como se realiza un ejercicio de la rutina</p>
+                <a href="#"> Ver Más </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <figure>
+                <img src="imagenes\envivo.png">
+            </figure>
+            <div class="contenido">
+                <h3 style="color: #ffffff;"> En Vivo</h3>
+                <p> Puede visualizar información on live sobre el establecimiento y estadisticas actualizadas </p>
+                <a href="#"> Ver Más </a>
+            </div>
+        </div>
+    </div>
+
+    <nav>
+		<ul class="menu-horizontal">
+			<li>
+                <a href="#" style="color: #ffffff;">Inicio</a>
+            </li>
+			<li>
+				<a href="#" style="color: #ffffff;">Información</a>
+				<ul class="menu-vertical">
+					<li><a href="#">Rutina</a></li>
+                    <li><a href="#">Horarios</a></li>
+                    <li><a href="#">Aforo</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#" style="color: #ffffff;">Salud</a>
+                <ul class="menu-vertical">
+					<li><a href="#">Calculadora</a></li>
+					<li><a href="#">Recomendaciones</a></li>
+					<li><a href="#">Alimentación</a></a></li>
+				</ul>
+			</li>
+			<li><a href="#" style="color: #ffffff;">Cuenta</a>
+                <ul class="menu-vertical">
+                    <li><a href="#">Editar</a></li>
+                    <li><a href="#">Cerrar Sesión</a></li>
+                </ul>
+            </li>
+            <li><a href="#" style="color: #ffffff;">Acerca</a>
+                <ul class="menu-vertical">
+                    <li><a href="#">Empresa</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Derechos de Autor</a></li>
+                </ul>
+            </li>
+		</ul>
+	</nav>
+
+    <h3 style="color: #ffffff;" id="Vida"><u><strong>Consejo Para una Vida Saludable</strong></h3>
+    <p id="consejo" class="consejo" style="color: #ffffff;"></p>
+
+    <script src="ConsejoDia.js" ></script>
+    <script>
+        window.onload = mostrarConsejoAleatorio;
+    </script>
+</body>
+</html>
+
+
+</body>
+</html>
