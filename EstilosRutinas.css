@@ -99,7 +99,7 @@ header {
 /* Logo en la esquina superior derecha */
 .logo {
   position: absolute;
-  top: 1px;
+  top: 35px;
   right: 1px;
   width: 150px;
   height: 150px;
