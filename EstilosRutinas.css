@@ -128,3 +128,35 @@ button:hover {
   opacity: 0.8;
   background-color: #5ca4a9;
 }
+
+.card {
+  width: 200px; /* Ancho deseado de la tarjeta */
+  height: 360px; /* Altura deseada de la tarjeta */
+  margin: 15px; /* Margen alrededor de cada tarjeta */
+  border-radius: 10px; /* Radio de las esquinas redondeadas */
+  overflow: hidden; /* Ocultar cualquier contenido que se desborde */
+  background: #5e5454da; /* Color de fondo */
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+  cursor: pointer; /* Cambiar cursor al pasar el ratón */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+
+  /* Ajustes específicos para el contenido dentro de la tarjeta */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contenido a {
+  position: absolute;
+  left: 80%;
+  top: 97px;
+  padding: 8px 12px; /* Relleno del enlace */
+  margin-top: 8px; /* Margen superior */
+  color: #2fb4cc; /* Color de texto */
+  border: 1px solid #2fb4cc; /* Borde del enlace */
+  border-radius: 4px; /* Radio del borde */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones suaves */
+  text-decoration: none; /* Sin subrayado */
+}
