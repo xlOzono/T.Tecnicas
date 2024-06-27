@@ -1,0 +1,19 @@
+//Tabla ficticia donde se ajusta la altura de las barras con JavaScript
+document.querySelector('.bar1').style.height = '50px';
+document.querySelector('.bar2').style.height = '60px';
+document.querySelector('.bar3').style.height = '70px';
+document.querySelector('.bar4').style.height = '80px';
+document.querySelector('.bar5').style.height = '90px';
+document.querySelector('.bar6').style.height = '100px';
+document.querySelector('.bar7').style.height = '110px';
+document.querySelector('.bar8').style.height = '120px';
+document.querySelector('.bar9').style.height = '130px';
+document.querySelector('.bar10').style.height = '140px';
+document.querySelector('.bar11').style.height = '150px';
+document.querySelector('.bar12').style.height = '160px';
+document.querySelector('.bar13').style.height = '170px';
+document.querySelector('.bar14').style.height = '180px';
+document.querySelector('.bar15').style.height = '190px';
+document.querySelector('.bar16').style.height = '200px';
+document.querySelector('.bar17').style.height = '210px';
+document.querySelector('.bar18').style.height = '220px';

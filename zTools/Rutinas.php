@@ -1,3 +1,21 @@
+<?php
+
+    session_start(); //Iniciamos sesion
+
+    if (!isset($_SESSION['RUT'])){ //isset es si existe, por tanto sino existe la variable de sesion usuario pues envia el mensaje
+        echo'
+            <script>
+                alert("Por favor, inicie sesión");
+                window.location = "Log&Register.php";
+            </script>
+        ';
+        session_destroy();  //Destruye cualquier sesion 
+        die(); //Mata tal cual el codigo que esta abajo
+    }
+    //session_destroy(); Mata el codigo para tener si o si que iniciar sesion para poder ingresar a la pagina
+    //ALERTA CON ESTE CODIGO, MUY PROBABLE SU ELIMINACION YA QUE ES MERA PRUEBA
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -5,7 +23,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Rutinas</title>
-<link rel="stylesheet" href="EstilosRutinas.css"/>
+<link rel="stylesheet" href="../css/EstilosRutinas.css"/>
 </head>
 <body> 
 
@@ -14,7 +32,7 @@
 
 <header>
   <h1>ㅤ Rutinas</h1>
-  <div class="contenido"><a href="PantallaPrincipal.html">VOLVER</a></div>
+  <div class="contenido"><a href="../mainMenu.php">VOLVER</a></div>
 </header>
 
 <div class="btn-group">
@@ -82,17 +100,8 @@
       <h3>&ensp;Nombre del ejercicio</h3></div>
     <div class="col2"><h2>XX SERIES&emsp;XX REPS</h2></div>
   </div>
-  
-  <script>
-  function openTab(routineName) {
-    var i;
-    var x = document.getElementsByClassName("wrapper");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";  
-    }
-    document.getElementById(routineName).style.display = "block";  
-  }
-  </script>
+
+  <script src="../js/Rutinas.js" ></script>
 </body>
 </html>
 

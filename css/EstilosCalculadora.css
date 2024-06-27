@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh; 
+    background-image: url('https://www.bupasalud.com/sites/default/files/styles/640_x_400/public/articulos/2023-02/fotos/food-variada.jpg?itok=wqkspjsJ');
+    background-size: cover;
+}
+header {
+    background: linear-gradient(rgba(5, 7, 12, 0.524), rgba(5, 7, 12, 0.575)), url("imagenes/cabeceraRutinas.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000; 
+}
+header h1 {
+    margin: 0;
+    color: white;
+    font-size: 20px;
+}
+.volver-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-right: 50px;
+}
+.volver-btn:hover {
+    background-color: #45a049;
+}
+.container {
+    margin-top: 100px; 
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 90%;
+    max-width: 900px; 
+}
+.calculadora {
+    flex: 1; 
+    padding: 20px; 
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+.calculadora h1 {
+    text-align: center;
+    font-size: 18px;
+    margin: 10px 0;
+}
+.form-group {
+    margin-bottom: 15px; 
+    width: 100%; 
+}
+.form-group label {
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px; 
+}
+.form-group input, .form-group select {
+    width: 100%; 
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box; 
+}
+.form-group input[type="radio"] {
+    width: auto; /* Tamaño automático para los radio buttons */
+}
+.form-group .radio-label {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 14px;
+}
+.btn {
+    width: 200px;  
+    margin-top: 10px;  
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    box-sizing: border-box;  
+}
+.btn:hover {
+    background-color: #45a049;
+}
+.resultados {
+    flex: 1; /* Para que ocupe el espacio restante */
+    padding: 20px;  
+    box-sizing: border-box;  
+}
+.resultados h2 {
+    text-align: center;
+    font-size: 18px;
+    margin: 10px 0;
+}
+.results div {
+    margin-bottom: 15px; /* Espacio entre cada resultado */
+    font-size: 14px;
+}
+.results div span {
+    font-weight: bold;
+}

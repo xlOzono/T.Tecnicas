@@ -1,0 +1,331 @@
+/* Estilos3.css */
+
+body {
+    background-image: url('../images/fondo3.jpg'); /* URL de la imagen de fondo */
+    background-size: cover; /* Ajustar la imagen para que cubra toda la pantalla */
+    background-repeat: no-repeat; /* No repetir la imagen si no llena la pantalla */
+    background-position: center center; /* Alinear la imagen en el centro */
+    background-attachment: fixed; /* Fijar la imagen para que no se mueva al hacer scroll */
+    background-color: #030000; /* Color de fondo de respaldo */
+    margin: 0; /* Eliminar margen predeterminado del cuerpo */
+}
+
+.logo {
+    width: 180px; /* Ancho deseado de la imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+    position: absolute; /* Posición absoluta para mover la imagen */
+    top: 70px; /* Colocar la parte superior de la imagen en el 11% del contenedor padre */
+    right: -90px; /* Colocar la parte izquierda de la imagen en el 6% del contenedor padre */
+    transform: translate(-50%, -50%); /* Centrar la imagen */
+    filter: brightness(900%); /* Aumentar el brillo de la imagen */
+}
+
+.titulo {
+    color: #ffffff; /* Color del texto */
+    font-size: 30px; /* Tamaño de la fuente */
+    text-align: center; /* Alinear el texto al centro */
+    position: absolute; /* Posición absoluta para fijar en un lugar específico */
+    top: 30px; /* Margen superior */
+    right: 60px; /* Centrar horizontalmente */
+    transform: translateX(-50%); /* Centrar el texto horizontalmente */
+}
+
+.rectangleContacto,
+.rectangleInfoUsuario,
+.rectangleHorarioAforo,
+.rectangleSaludo {
+    width: 300px; /* Ancho del rectángulo */
+    height: 100px; /* Altura del rectángulo */
+    background-color: rgba(164, 164, 164, 0.842); /* Color de fondo con transparencia */
+    border-radius: 15px; /* Radio de las esquinas redondeadas */
+    position: fixed; /* Posición fija en la pantalla */
+    bottom: 20px; /* Distancia desde la parte inferior de la ventana */
+    display: inline-block; /* Asegura que los rectángulos se muestren en línea */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+}
+
+.rectangleContacto {
+    left: 100px; /* Ajuste para evitar que se superponga */
+}
+
+.rectangleInfoUsuario {
+    left: 50%; /* Posición centrada horizontalmente */
+    transform: translateX(-50%);
+}
+
+.rectangleHorarioAforo {
+    right: 100px; /* Ajuste para evitar que se superponga */
+}
+
+.rectangleSaludo {
+    width: 300px; /* Ancho del rectángulo */
+    height: 60px; /* Altura del rectángulo */
+    top: 60px; /* Distancia desde la parte superior */
+    left: 50%; /* Posición centrada horizontalmente */
+    transform: translateX(-50%);
+}
+
+#bienvenido {
+    position: absolute;
+    top:20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+}
+
+/* MENU SELECCIONABLE */
+
+nav {
+    position: absolute; /* Posición absoluta para fijar en la pantalla */
+    top: 0; /* Fijar en la parte superior */
+    width: 40%; /* Ancho del menú */
+    background-color: #232a233f; /* Color de fondo */
+    font-size: 19px; /* Tamaño de fuente */
+    z-index: 1000; /* Capa z para superposición */
+}
+
+.menu-horizontal {
+    list-style: none; /* Eliminar viñetas de lista */
+    display: flex; /* Mostrar en línea */
+    justify-content: center; /* Centrar elementos */
+    margin: 0; /* Eliminar margen */
+    padding: 10px 0; /* Relleno superior e inferior */
+}
+
+.menu-horizontal li {
+    position: relative; /* Posición relativa */
+    margin: 0 10px; /* Margen horizontal */
+}
+
+.menu-horizontal > li > a {
+    display: block; /* Mostrar en bloque */
+    padding: 10px 15px; /* Relleno interno */
+    color: white; /* Color de texto */
+    text-decoration: none; /* Sin subrayado */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.menu-horizontal > li > a:hover {
+    background-color: #555; /* Fondo al pasar el cursor */
+}
+
+.menu-vertical {
+    position: absolute; /* Posición absoluta */
+    display: none; /* Ocultar inicialmente */
+    list-style: none; /* Eliminar viñetas de lista */
+    width: 150px; /* Ancho del menú */
+    background-color: rgba(0, 0, 0, 0.5); /* Color de fondo con transparencia */
+    padding: 0; /* Sin relleno */
+    top: 100%; /* Posicionar debajo del elemento padre */
+    left: 0; /* Alinear a la izquierda */
+    font-size: 16px; /* Tamaño de fuente */
+    border-radius: 5px; /* Radio de las esquinas redondeadas */
+    white-space: nowrap; /* No envolver texto */
+}
+
+.menu-horizontal li:hover .menu-vertical {
+    display: block; /* Mostrar al hacer hover en el elemento padre */
+}
+
+.menu-vertical li {
+    height: 20px; /* Altura del elemento */
+    box-sizing: content-box; /* Modelo de caja */
+    padding: 15px 15px; /* Relleno interno */
+}
+
+.menu-vertical li:not(:first-child) {
+    border-top: 1px solid #666; /* Borde superior para todos menos el primero */
+}
+
+.menu-vertical li a {
+    display: block; /* Mostrar en bloque */
+    color: white; /* Color de texto */
+    text-decoration: none; /* Sin subrayado */
+}
+/* Estilos para el gráfico de barras */
+/*FONDO BLANCO*/
+.chart-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-around; /* Alinea los elementos horizontalmente */
+    align-items: flex-end; /* Alinea los elementos verticalmente */
+    transform: translate(0px, 00px);
+}
+
+.chart-container1 {
+    width: 80%;
+    max-width: 700px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-around; /* Alinea los elementos horizontalmente */
+    align-items: flex-end; /* Alinea los elementos verticalmente */
+    transform: translate(400px, -400px);
+}
+
+.chart {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 400px;
+    border-left: 2px solid #000;
+    border-bottom: 2px solid #000;
+    padding: 10px;
+    position: relative;
+}
+
+.bar {
+    width: 8%;
+    background-color: #4CAF50;
+    color: #fff;
+    text-align: center;
+    margin: 0 5px;
+    transition: transform 0.5s, height 0.5s;
+    position: relative;
+    height: 0%; /* Altura inicial en porcentaje */
+}
+
+.bar::after {
+    content: attr(data-label);
+    display: block;
+    margin-top: 5px;
+    font-size: 12px;
+    color: #333;
+    position: absolute;
+    bottom: -20px;
+    width: 100%;
+    left: 0;
+}
+.bar::after {
+    content: attr(data-hour);
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+    color: #333;
+}
+
+/*Color despues de la animacion*/
+.bar:hover {
+    background-color: #4CAF50;
+}
+
+/*Animacion*/
+.chart-container:hover .bar {
+    transform: rotateY(20deg) rotateX(20deg) translateZ(50px);
+}
+/*Animacion*/
+.chart-container1:hover .bar {
+    transform: rotateY(20deg) rotateX(20deg) translateZ(50px);
+}
+
+/* Estilos para los cuadros de texto de aforo y uso de máquinas */
+.info-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+    transform: translate(00px, 550px);
+}
+
+.info-box {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    width: 45%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.info-box h2 {
+    margin: 0 0 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+.info-box p {
+    font-size: 36px;
+    margin: 0;
+    color: #4CAF50;
+}
+/* Estilos para el listado de máquinas */
+.machines-container {
+    display: flex;
+    justify-content: flex-start; /* Alinea los elementos hacia la izquierda */
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+    transform: translate(-400px, 50px); /* Ajusta la posición en los ejes X e Y */
+}
+
+.machines-list {
+    width: 45%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.machines-list h2 {
+    text-align: center;
+    color: #333;
+}
+
+.machines-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.machines-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.machines-list li:hover {
+    background-color: #f0f0f0;
+}
+
+.machine-info img {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.machine-info {
+    color: white; /* Cambia el color del texto a blanco */
+    padding: 20px;
+    background-color: #444; /* Fondo oscuro para el contenedor */
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 50px auto;
+    text-align: left;
+}
+
+.machine-info h2 {
+    margin-bottom: 20px;
+}
+
+.machine-info p {
+    margin: 10px 0;
+}
+
+.machine-info strong {
+    font-weight: bold;
+}
+
+.machine-info span {
+    display: inline-block;
+    margin-left: 10px;
+}

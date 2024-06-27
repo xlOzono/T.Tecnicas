@@ -34,7 +34,7 @@
 }
 
 body {
-    background-image: url('sss.jpg'); /* URL de la imagen de fondo */
+    background-image: url('../images/fondo2.jpg'); /* URL de la imagen de fondo */
     background-size: cover; /* Ajustar la imagen para que cubra toda la pantalla */
     background-repeat: no-repeat; /* No repetir la imagen si no llena la pantalla */
     background-position: center center; /* Alinear la imagen en el centro */
@@ -184,7 +184,6 @@ nav {
     width: 40%; /* Ancho del menú */
     background-color: #232a233f; /* Color de fondo */
     font-size: 19px; /* Tamaño de fuente */
-    
     z-index: 1000; /* Capa z para superposición */
 }
 

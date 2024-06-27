@@ -22,7 +22,7 @@
         echo '
             <script>
                 alert("Este correo electrónico ya está registrado, prueba con otro correo electrónico..");
-                window.location = "../index.php";
+                window.location = "../Log&Register.php";
             </script>
         ';
         exit(); //El codigo de abajo no se ejecutara
@@ -35,7 +35,7 @@
         echo '
             <script>
                 alert("Este RUT ya está registrado, ingrese otro RUT valido.");
-                window.location = "../index.php";
+                window.location = "../Log&Register.php";
             </script>
         ';
         exit(); //El codigo de abajo no se ejecutara
@@ -47,7 +47,7 @@
         echo '
             <script>
                 alert("Registro exitoso.");
-                window.location = "../index.php";
+                window.location = "../Log&Register.php";
             </script>
         ';
     }
@@ -55,7 +55,7 @@
         echo '
             <script>
                 alert("Inténtalo de nuevo, la usuario no pudo registrarse.");
-                window.location = "../index.php";
+                window.location = "../Log&Register.php";
             </script>
         ';
     }

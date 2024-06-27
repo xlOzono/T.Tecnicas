@@ -9,5 +9,4 @@
         echo 'No se pudo ingresar a la base de datos.';
     }
     
-
 ?>
