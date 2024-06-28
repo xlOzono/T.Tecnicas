@@ -30,9 +30,6 @@ body {
     transform: translateX(-50%); /* Centrar el texto horizontalmente */
 }
 
-.rectangleContacto,
-.rectangleInfoUsuario,
-.rectangleHorarioAforo,
 .rectangleSaludo {
     width: 300px; /* Ancho del rectángulo */
     height: 100px; /* Altura del rectángulo */
@@ -42,19 +39,6 @@ body {
     bottom: 20px; /* Distancia desde la parte inferior de la ventana */
     display: inline-block; /* Asegura que los rectángulos se muestren en línea */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
-}
-
-.rectangleContacto {
-    left: 100px; /* Ajuste para evitar que se superponga */
-}
-
-.rectangleInfoUsuario {
-    left: 50%; /* Posición centrada horizontalmente */
-    transform: translateX(-50%);
-}
-
-.rectangleHorarioAforo {
-    right: 100px; /* Ajuste para evitar que se superponga */
 }
 
 .rectangleSaludo {
@@ -72,6 +56,7 @@ body {
     transform: translate(-50%, -50%);
     color: #ffffff;
     white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    font-size: 24px;
 }
 
 /* MENU SELECCIONABLE */
@@ -81,7 +66,7 @@ nav {
     top: 0; /* Fijar en la parte superior */
     width: 40%; /* Ancho del menú */
     background-color: #232a233f; /* Color de fondo */
-    font-size: 19px; /* Tamaño de fuente */
+    font-size: 30px; /* Tamaño de fuente */
     z-index: 1000; /* Capa z para superposición */
 }
 
@@ -114,12 +99,12 @@ nav {
     position: absolute; /* Posición absoluta */
     display: none; /* Ocultar inicialmente */
     list-style: none; /* Eliminar viñetas de lista */
-    width: 150px; /* Ancho del menú */
+    width: 180px; /* Ancho del menú */
     background-color: rgba(0, 0, 0, 0.5); /* Color de fondo con transparencia */
     padding: 0; /* Sin relleno */
     top: 100%; /* Posicionar debajo del elemento padre */
     left: 0; /* Alinear a la izquierda */
-    font-size: 16px; /* Tamaño de fuente */
+    font-size: 20px; /* Tamaño de fuente */
     border-radius: 5px; /* Radio de las esquinas redondeadas */
     white-space: nowrap; /* No envolver texto */
 }
@@ -146,11 +131,11 @@ nav {
 /* Estilos para el gráfico de barras */
 /*FONDO BLANCO*/
 .chart-container {
-    width: 80%;
-    max-width: 800px;
+    width: 100%;
+    max-width: 1000px;
     margin: 50px auto;
     background-color: #fff;
-    padding: 20px;
+    padding: 40px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-around; /* Alinea los elementos horizontalmente */
@@ -159,16 +144,16 @@ nav {
 }
 
 .chart-container1 {
-    width: 80%;
-    max-width: 700px;
+    width: 100%;
+    max-width: 850px;
     margin: 50px auto;
     background-color: #fff;
-    padding: 20px;
+    padding: 40px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-around; /* Alinea los elementos horizontalmente */
     align-items: flex-end; /* Alinea los elementos verticalmente */
-    transform: translate(400px, -400px);
+    transform: translate(470px, -450px);
 }
 
 .chart {
@@ -197,7 +182,7 @@ nav {
     content: attr(data-label);
     display: block;
     margin-top: 5px;
-    font-size: 12px;
+    font-size: 18px;
     color: #333;
     position: absolute;
     bottom: -20px;
@@ -225,6 +210,20 @@ nav {
 .chart-container1:hover .bar {
     transform: rotateY(20deg) rotateX(20deg) translateZ(50px);
 }
+
+.info-box h2 {
+    margin: 0 0 10px;
+    font-size: 40px;
+    color: #333;
+}
+
+.info-box p {
+    font-size: 45px;
+    margin: 0;
+    color: #4CAF50;
+}
+
+
 
 /* Estilos para los cuadros de texto de aforo y uso de máquinas */
 .info-container {
@@ -263,7 +262,7 @@ nav {
     margin: 20px auto;
     width: 80%;
     max-width: 800px;
-    transform: translate(-400px, 50px); /* Ajusta la posición en los ejes X e Y */
+    transform: translate(-400px, 100px); /* Ajusta la posición en los ejes X e Y */
 }
 
 .machines-list {

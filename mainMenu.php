@@ -52,7 +52,7 @@
             <div class="contenido">
                 <h3 style="color: #ffffff;"> Maquinas </h3>
                 <p> Aquí te proporcionamos información sobre las maquinas disponibles en el establecimiento. </p>
-                <a href="#"> Ver Más </a>
+                <a href="zTools/Maquinas.php"> Ver Más </a>
             </div>
         </div>
 
@@ -85,7 +85,7 @@
             <div class="contenido">
                 <h3 style="color: #ffffff;"> En Vivo</h3>
                 <p> Puede visualizar información on live sobre el establecimiento y estadisticas actualizadas </p>
-                <a href="#"> Ver Más </a>
+                <a href="zTools/Aforo.php"> Ver Más </a>
             </div>
         </div>
     </div>
@@ -100,7 +100,7 @@
 				<ul class="menu-vertical">
 					<li><a href="zTools/Rutinas.php">Rutinas</a></li>
                     <li><a href="#">Horarios</a></li>
-                    <li><a href="#">Aforo</a></li>
+                    <li><a href="zTools/Aforo.php">Aforo</a></li>
 				</ul>
 			</li>
 			<li>

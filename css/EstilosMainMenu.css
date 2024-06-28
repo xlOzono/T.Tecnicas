@@ -70,6 +70,7 @@ body {
     transform: translate(-50%, -50%);
     color: #ffffff;
     white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    font-size: 24px;
 }
 
 
@@ -107,8 +108,8 @@ body {
 }
 
 .card {
-    width: 200px; /* Ancho deseado de la tarjeta */
-    height: 360px; /* Altura deseada de la tarjeta */
+    width: 300px; /* Ancho deseado de la tarjeta */
+    height: 420px; /* Altura deseada de la tarjeta */
     margin: 15px; /* Margen alrededor de cada tarjeta */
     border-radius: 10px; /* Radio de las esquinas redondeadas */
     overflow: hidden; /* Ocultar cualquier contenido que se desborde */
@@ -123,6 +124,9 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+
+    /* Propiedad para mover la tarjeta verticalmente */
+    transform: translateY(50px); /* Inicialmente sin desplazamiento */
 }
 
 .card figure {
@@ -140,8 +144,6 @@ body {
     object-fit: cover; /* Ajustar la imagen dentro del contenedor manteniendo la relación de aspecto */
 }
 
-
-
 .card .contenido {
     margin-top: -50px; /* Ajusta este valor para subir el contenido */
     padding: 15px; /* Relleno interno */
@@ -152,12 +154,13 @@ body {
     line-height: 1.3; /* Espaciado entre líneas */
     color: #f1eeee; /* Color de texto */
     font-weight: bold; /* Negrita */
-
+    font-size: 20px;
 }
 
 .card .contenido h3 {
     font-weight: bold; /* Peso de la fuente */
     margin-bottom: 10px; /* Margen inferior del encabezado */
+    font-size: 24px;
 }
 
 .card .contenido a {
@@ -169,6 +172,7 @@ body {
     border-radius: 4px; /* Radio del borde */
     transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones suaves */
     text-decoration: none; /* Sin subrayado */
+    font-size: 24px;
 }
 
 .card .contenido a:hover {
@@ -183,7 +187,7 @@ nav {
     top: 0; /* Fijar en la parte superior */
     width: 40%; /* Ancho del menú */
     background-color: #232a233f; /* Color de fondo */
-    font-size: 19px; /* Tamaño de fuente */
+    font-size: 30px; /* Tamaño de fuente */
     z-index: 1000; /* Capa z para superposición */
 }
 
@@ -216,12 +220,12 @@ nav {
     position: absolute; /* Posición absoluta */
     display: none; /* Ocultar inicialmente */
     list-style: none; /* Eliminar viñetas de lista */
-    width: 150px; /* Ancho del menú */
+    width: 180px; /* Ancho del menú */
     background-color: rgba(0, 0, 0, 0.5); /* Color de fondo con transparencia */
     padding: 0; /* Sin relleno */
     top: 100%; /* Posicionar debajo del elemento padre */
     left: 0; /* Alinear a la izquierda */
-    font-size: 16px; /* Tamaño de fuente */
+    font-size: 20px; /* Tamaño de fuente */
     border-radius: 5px; /* Radio de las esquinas redondeadas */
     white-space: nowrap; /* No envolver texto */
 }

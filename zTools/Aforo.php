@@ -23,7 +23,7 @@ if (!isset($_SESSION['RUT'])){ //isset es si existe, por tanto sino existe la va
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gimnasio</title>
-    <link rel="stylesheet" href="../css/EstilosAdmin.css">
+    <link rel="stylesheet" href="../css/EstilosAforo.css">
 
     
     <!--La magia de las técnicas de AJAX, cada 5 segundos comprueba los cambios en la base de datos LOCURA!!!!!!-->
@@ -54,26 +54,11 @@ if (!isset($_SESSION['RUT'])){ //isset es si existe, por tanto sino existe la va
     
 </head>
 <body>
-    <img src="../images/logo.png" alt="Descripción de la imagen" id="miImagen" class="logo">
-    <h1 class="titulo">GYM ARICA</h1>
 
-    <div class="rectangleSaludo"> 
-        <h3 style="color: #ffffff;" id="bienvenido">Bienvenido Administrador!</h3>
-    </div>
-
-    <nav>
-        <ul class="menu-horizontal">
-            <li><a href="AdminAforo.php" style="color: #ffffff;">Ver aforo</a></li>
-            <li><a href="AdminMaquinas.php" style="color: #ffffff;">Máquinas</a></li>
-            <li>
-                <a href="#" style="color: #ffffff;">Cuenta</a>
-                <ul class="menu-vertical">
-                    <li><a href="#">Editar</a></li>
-                    <li><a href="../php/closeSession.php">Cerrar Sesión</a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
+    <header>
+    <h1>Aforo</h1>
+    <a href="../mainMenu.php" class="volver-btn">VOLVER</a>
+    </header>
 
     <div class="info-container">
         <div class="info-box">

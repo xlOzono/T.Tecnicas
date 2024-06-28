@@ -86,12 +86,11 @@
     <h1 class="titulo">GYM ARICA</h1>
 
     <div class="rectangleSaludo"> 
-        <h3 style="color: #ffffff;" id="bienvenido">Bienvenido Administrador</h3>
+        <h3 style="color: #ffffff;" id="bienvenido">Bienvenido Administrador!</h3>
     </div>
 
     <nav>
         <ul class="menu-horizontal">
-            <li><a href="ma" style="color: #ffffff;">Inicio</a></li>
             <li><a href="AdminAforo.php" style="color: #ffffff;">Ver aforo</a></li>
             <li><a href="AdminMaquinas.php" style="color: #ffffff;">Máquinas</a></li>
             <li>

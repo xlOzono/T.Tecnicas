@@ -1,0 +1,129 @@
+/* Estilos3.css */
+
+body {
+    background-image: url('../images/fondo3.jpg'); /* URL de la imagen de fondo */
+    background-size: cover; /* Ajustar la imagen para que cubra toda la pantalla */
+    background-repeat: no-repeat; /* No repetir la imagen si no llena la pantalla */
+    background-position: center center; /* Alinear la imagen en el centro */
+    background-attachment: fixed; /* Fijar la imagen para que no se mueva al hacer scroll */
+    background-color: #030000; /* Color de fondo de respaldo */
+    margin: 0; /* Eliminar margen predeterminado del cuerpo */
+}
+
+#bienvenido {
+    position: absolute;
+    top:20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+}
+/* Estilo para el header */
+header {
+    background: linear-gradient(rgba(5, 7, 12, 0.524), rgba(5, 7, 12, 0.575)), url("imagenes/cabeceraRutinas.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000; 
+}
+header h1 {
+    margin: 0;
+    color: white;
+    font-size: 50px;
+}
+.volver-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 24px;
+    margin-right: 50px;
+}
+.volver-btn:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para el listado de máquinas */
+.machines-container {
+    display: flex;
+    justify-content: flex-start; /* Alinea los elementos hacia la izquierda */
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+    transform: translate(00px, 100px); /* Ajusta la posición en los ejes X e Y */
+}
+
+.machines-list {
+    width: 45%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.machines-list h2 {
+    text-align: center;
+    color: #333;
+}
+
+.machines-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.machines-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.machines-list li:hover {
+    background-color: #f0f0f0;
+}
+
+.machine-info img {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.machine-info {
+    color: white; /* Cambia el color del texto a blanco */
+    padding: 20px;
+    background-color: #444; /* Fondo oscuro para el contenedor */
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 50px auto;
+    text-align: left;
+}
+
+.machine-info h2 {
+    margin-bottom: 20px;
+}
+
+.machine-info p {
+    margin: 10px 0;
+}
+
+.machine-info strong {
+    font-weight: bold;
+}
+
+.machine-info span {
+    display: inline-block;
+    margin-left: 10px;
+}
