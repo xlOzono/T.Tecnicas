@@ -1,0 +1,251 @@
+.rectangleContacto,
+.rectangleInfoUsuario,
+.rectangleHorarioAforo,
+.rectangleSaludo {
+    width: 300px; /* Ancho del rectángulo */
+    height: 100px; /* Altura del rectángulo */
+    background-color: rgba(164, 164, 164, 0.842); /* Color de fondo con transparencia */
+    border-radius: 15px; /* Radio de las esquinas redondeadas */
+    position: fixed; /* Posición fija en la pantalla */
+    bottom: 20px; /* Distancia desde la parte inferior de la ventana */
+    display: inline-block; /* Asegura que los rectángulos se muestren en línea */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+}
+
+.rectangleContacto {
+    left: 100px; /* Ajuste para evitar que se superponga */
+}
+
+.rectangleInfoUsuario {
+    left: 50%; /* Posición centrada horizontalmente */
+    transform: translateX(-50%);
+}
+
+.rectangleHorarioAforo {
+    right: 100px; /* Ajuste para evitar que se superponga */
+}
+
+.rectangleSaludo {
+    width: 300px; /* Ancho del rectángulo */
+    height: 60px; /* Altura del rectángulo */
+    top: 60px; /* Distancia desde la parte superior */
+    left: 50%; /* Posición centrada horizontalmente */
+    transform: translateX(-50%);
+}
+
+body {
+    background-image: url('../images/fondo2.jpg'); /* URL de la imagen de fondo */
+    background-size: cover; /* Ajustar la imagen para que cubra toda la pantalla */
+    background-repeat: no-repeat; /* No repetir la imagen si no llena la pantalla */
+    background-position: center center; /* Alinear la imagen en el centro */
+    background-attachment: fixed; /* Fijar la imagen para que no se mueva al hacer scroll */
+    background-color: #030000; /* Color de fondo de respaldo */
+    margin: 0; /* Eliminar margen predeterminado del cuerpo */
+}
+
+.logo {
+    width: 180px; /* Ancho deseado de la imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+    position: absolute; /* Posición absoluta para mover la imagen */
+    top: 70px; /* Colocar la parte superior de la imagen en el 11% del contenedor padre */
+    right: -90px; /* Colocar la parte izquierda de la imagen en el 6% del contenedor padre */
+    transform: translate(-50%, -50%); /* Centrar la imagen */
+    filter: brightness(900%); /* Aumentar el brillo de la imagen */
+}
+
+.titulo {
+    color: #ffffff; /* Color del texto */
+    font-size: 30px; /* Tamaño de la fuente */
+    text-align: center; /* Alinear el texto al centro */
+    position: absolute; /* Posición absoluta para fijar en un lugar específico */
+    top: 30px; /* Margen superior */
+    right: 60px; /* Centrar horizontalmente */
+    transform: translateX(-50%); /* Centrar el texto horizontalmente */
+}
+
+#bienvenido {
+    position: absolute;
+    top:20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    font-size: 24px;
+}
+
+
+#Vida {
+    position: fixed; /* Posición fija para que se mantenga en la misma posición al hacer scroll */
+    bottom: 45px; /* Distancia desde la parte inferior de la ventana */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translateX(-50%); /* Centrar horizontalmente */
+    color: white; /* Color de texto */
+    font-size: 24px; /* Tamaño de fuente */
+    text-align: center; /* Alinear texto al centro */
+}
+
+.consejo {
+    position: fixed; /* Posición fija para que se mantenga en la misma posición al hacer scroll */
+    bottom: 1px; /* Distancia desde la parte inferior de la ventana */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translateX(-50%); /* Centrar horizontalmente */
+    width: 80%; /* Ancho del mensaje */
+    color: white; /* Color de texto */
+    font-size: 20px; /* Tamaño de fuente */
+    text-align: center; /* Alinear texto al centro */
+    font-weight: bold; /* Negrita */
+}
+
+
+.container {
+    width: 100%; /* Ancho completo del contenedor */
+    display: flex;
+    justify-content: center; /* Centrar las tarjetas horizontalmente */
+    align-items: flex-start; /* Alinear las tarjetas hacia arriba */
+    flex-wrap: wrap; /* Envolver las tarjetas cuando el espacio es insuficiente */
+    gap: 10px; /* Espacio entre las tarjetas */
+    margin-top: 150px; /* Espacio superior para separar del borde superior */
+}
+
+.card {
+    width: 300px; /* Ancho deseado de la tarjeta */
+    height: 420px; /* Altura deseada de la tarjeta */
+    margin: 15px; /* Margen alrededor de cada tarjeta */
+    border-radius: 10px; /* Radio de las esquinas redondeadas */
+    overflow: hidden; /* Ocultar cualquier contenido que se desborde */
+    background: #5e5454da; /* Color de fondo */
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+    cursor: pointer; /* Cambiar cursor al pasar el ratón */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+
+    /* Ajustes específicos para el contenido dentro de la tarjeta */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    /* Propiedad para mover la tarjeta verticalmente */
+    transform: translateY(50px); /* Inicialmente sin desplazamiento */
+}
+
+.card figure {
+    margin-bottom: 15px; /* Espacio entre la imagen y el texto */
+}
+
+.card:hover {
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); /* Sombra aumentada al hacer hover */
+    transform: translateY(-10px); /* Levantamiento suave al hacer hover */
+}
+
+.card #calculadora{
+    width: 100%; /* Ajustar la imagen para que ocupe todo el ancho disponible dentro de la tarjeta */
+    height: 90%; /* Altura automática para mantener la proporción */
+    object-fit: cover; /* Ajustar la imagen dentro del contenedor manteniendo la relación de aspecto */
+}
+
+.card .contenido {
+    margin-top: -50px; /* Ajusta este valor para subir el contenido */
+    padding: 15px; /* Relleno interno */
+    text-align: center; /* Alinear texto al centro */
+}
+
+.card .contenido p {
+    line-height: 1.3; /* Espaciado entre líneas */
+    color: #f1eeee; /* Color de texto */
+    font-weight: bold; /* Negrita */
+    font-size: 20px;
+}
+
+.card .contenido h3 {
+    font-weight: bold; /* Peso de la fuente */
+    margin-bottom: 10px; /* Margen inferior del encabezado */
+    font-size: 24px;
+}
+
+.card .contenido a {
+    display: inline-block; /* Mostrar en línea */
+    padding: 8px 12px; /* Relleno del enlace */
+    margin-top: 8px; /* Margen superior */
+    color: #2fb4cc; /* Color de texto */
+    border: 1px solid #2fb4cc; /* Borde del enlace */
+    border-radius: 4px; /* Radio del borde */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones suaves */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 24px;
+}
+
+.card .contenido a:hover {
+    background-color: #2fb4cc; /* Fondo al pasar el cursor */
+    color: #fff; /* Color de texto al pasar el cursor */
+}
+
+/* MENU SELECCIONABLE */
+
+nav {
+    position: absolute; /* Posición absoluta para fijar en la pantalla */
+    top: 0; /* Fijar en la parte superior */
+    width: 40%; /* Ancho del menú */
+    background-color: #232a233f; /* Color de fondo */
+    font-size: 30px; /* Tamaño de fuente */
+    z-index: 1000; /* Capa z para superposición */
+}
+
+.menu-horizontal {
+    list-style: none; /* Eliminar viñetas de lista */
+    display: flex; /* Mostrar en línea */
+    justify-content: center; /* Centrar elementos */
+    margin: 0; /* Eliminar margen */
+    padding: 10px 0; /* Relleno superior e inferior */
+}
+
+.menu-horizontal li {
+    position: relative; /* Posición relativa */
+    margin: 0 10px; /* Margen horizontal */
+}
+
+.menu-horizontal > li > a {
+    display: block; /* Mostrar en bloque */
+    padding: 10px 15px; /* Relleno interno */
+    color: white; /* Color de texto */
+    text-decoration: none; /* Sin subrayado */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.menu-horizontal > li > a:hover {
+    background-color: #555; /* Fondo al pasar el cursor */
+}
+
+.menu-vertical {
+    position: absolute; /* Posición absoluta */
+    display: none; /* Ocultar inicialmente */
+    list-style: none; /* Eliminar viñetas de lista */
+    width: 180px; /* Ancho del menú */
+    background-color: rgba(0, 0, 0, 0.5); /* Color de fondo con transparencia */
+    padding: 0; /* Sin relleno */
+    top: 100%; /* Posicionar debajo del elemento padre */
+    left: 0; /* Alinear a la izquierda */
+    font-size: 20px; /* Tamaño de fuente */
+    border-radius: 5px; /* Radio de las esquinas redondeadas */
+    white-space: nowrap; /* No envolver texto */
+}
+
+.menu-horizontal li:hover .menu-vertical {
+    display: block; /* Mostrar al hacer hover en el elemento padre */
+}
+
+.menu-vertical li {
+    height: 20px; /* Altura del elemento */
+    box-sizing: content-box; /* Modelo de caja */
+    padding: 15px 15px; /* Relleno interno */
+}
+
+.menu-vertical li:not(:first-child) {
+    border-top: 1px solid #666; /* Borde superior para todos menos el primero */
+}
+
+.menu-vertical li a {
+    display: block; /* Mostrar en bloque */
+    color: white; /* Color de texto */
+    text-decoration: none; /* Sin subrayado */
+}

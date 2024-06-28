@@ -24,7 +24,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gimnasio</title>
     <img src="images/logo.png" alt="Descripción de la imagen" id="miImagen" class="logo">
-    <link rel="stylesheet" href="css/EstilosMainMenu.css">
+    <link rel="stylesheet" href="../css\EstilosVideosDemostrativos.css">
 </head>
 <body>
     <h1 class="titulo">GYM ARICA</h1>
@@ -39,30 +39,30 @@
                 <br><img src="images/calcul.png" id="calculadora">
             </figure>
             <div class="contenido">
-                <h3 style="color: #ffffff;"> Calculadora </h3>
-                <p>  Ayuda a determinar sus necesidades diarias de macronutrientes en su dieta.</p>
+                <h3 style="color: #ffffff;"> Espalda </h3>
+                <p>  Ejercicios para Espalda </p>
                 <a href="zTools/Calculadora.php"> Ver Más</a>
             </div>
         </div>
 
         <div class="card">
             <figure>
-                <img src="images/maquina.png">
+                <img src="../images/maquina.png">
             </figure>
             <div class="contenido">
-                <h3 style="color: #ffffff;"> Maquinas </h3>
-                <p> Aquí te proporcionamos información sobre las maquinas disponibles en el establecimiento. </p>
+                <h3 style="color: #ffffff;"> Piernas </h3>
+                <p> Ejercicios para Piernas </p>
                 <a href="zTools/Maquinas.php"> Ver Más </a>
             </div>
         </div>
 
         <div class="card">
             <figure>
-                <img src="images/rutina.png">
+                <img src="../images/Triceps.png">
             </figure>
             <div class="contenido">
-                <h3 style="color: #ffffff;" id="rutinas">Rutinas </h3>
-                <p> En esta sección te asignamos una rutina de entrenamiento según tus preferencias. </p>
+                <h3 style="color: #ffffff;" id="rutinas">Triceps </h3>
+                <p> Ejercicio para Triceps </p>
                 <a href="zTools/Rutinas.php"> Ver Más </a>
             </div>
         </div>
@@ -72,20 +72,20 @@
                 <img src="images/video.png">
             </figure>
             <div class="contenido">
-                <h3 style="color: #ffffff;">Video Demostración </h3>
-                <p> Se presenta visualmente la ténica adecuada de como se realiza un ejercicio de la rutina</p>
-                <a href="php\VideosDemostrativos.php"> Ver Más </a>
+                <h3 style="color: #ffffff;"> Pecho </h3>
+                <p> Ejercicios para Pecho </p>
+                <a href="#"> Ver Más </a>
             </div>
         </div>
 
         <div class="card">
             <figure>
-                <img src="images/envivo.png">
+                <img src="">
             </figure>
             <div class="contenido">
-                <h3 style="color: #ffffff;"> En Vivo</h3>
-                <p> Puede visualizar información on live sobre el establecimiento y estadisticas actualizadas </p>
-                <a href="zTools/Aforo.php"> Ver Más </a>
+                <h3 style="color: #ffffff;"> Biceps</h3>
+                <p> Ejercicios para Biceps </p>
+                <a href="PaginaBiceps.php"> Ver Más </a>
             </div>
         </div>
     </div>
